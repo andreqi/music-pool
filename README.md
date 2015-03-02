@@ -1,4 +1,6 @@
-stream-archive
+Playlist
 ==============
 
-stream archive for your favorite radio/tv shows
+simple playlist maker, just for fun
+
+- Place Google API key in config.js
