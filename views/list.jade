@@ -1,0 +1,18 @@
+extends ./layout.jade
+
+block body
+  table.table
+    thead
+      tr 
+        th #
+        th Youtube ID
+        th Title
+        th Duration
+    tbody
+      each video, index in playlist
+        tr 
+          td= index+1 
+          td 
+            a= video.url
+          td= video.title 
+          td= video.duration

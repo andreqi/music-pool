@@ -1,0 +1,18 @@
+.header {
+  min-height: 155px;  
+  padding-top: 50px;
+}
+
+#nav-links {
+  margin-top: 20px;
+}
+
+#baozi-description {
+  min-height: 500px;
+  padding-top: 20px;
+}
+
+#footer {
+  min-height: 100px;
+  padding-bottom: 50px;
+}

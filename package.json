@@ -1,0 +1,35 @@
+{
+  "name": "music-pool",
+  "description": "submit music for a shared player youtube based",
+  "repository" : {
+      "type": "git",
+      "url" : "git://github.com/andreqi/music-pool.git"
+  },
+  "dependencies": {
+      "body-parser": "*",
+      "express": "*",
+      "jade": "*",
+      "lodash": "*",
+      "react-bootstrap": "*", 
+      "request": "*"  
+  },
+  "devDependencies": {
+      "browserify": "*",
+      "node-jsx": "*",
+      "react": "*",
+      "reactify": "*"
+  },
+  "scripts": {
+      "build-js": "mkdir -p public && browserify app/app.js --standalone Application --debug --outfile public/main.js",
+      "build-css": "",
+      "build": "npm run build-js && npm run build-css",
+      "start": "node app.js",
+      "web": "npm run build && npm start",
+      "dev": "nodemon --exec \"npm run web\" --ignore public/main.js -e js,jsx"
+  },
+  "browserify": {
+      "transform": [
+          ["reactify", {"es6": true}]
+      ]
+  }
+}

@@ -1,0 +1,12 @@
+extends ./layout.jade
+
+block body
+  form(action="/", method="POST")
+    div.form-group
+      label(for="youtube-link") Youtube Link
+      input.form-control(type="text", 
+                         id="youtube-link", 
+                         name="video_url", 
+                         placeholder="Enter youtube url")   
+    button(type="submit" class="btn btn-default") Submit
+
